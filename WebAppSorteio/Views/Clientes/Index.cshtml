@@ -1,0 +1,72 @@
+﻿@model WebAppSorteio.Models.Entidades.Cliente
+
+@{
+    ViewData["Sorteio"] = "Início";
+}
+
+<h1>Sorteio de Clientes</h1>
+<br />
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="PostarCliente">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" id="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" id="Telefone" class="form-control" type="text" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" id="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <br /><input id="btn-div" type="submit" value="Gerar Número" class="btn btn-primary" />
+            </div>
+        </form>
+
+
+        @{
+            var NumeroSorteado = ViewData["NumeroSorteado"];
+        }
+
+        @if (NumeroSorteado != null)
+        {
+
+            <div id="Sorteado">
+                <p>Seu número é: @Html.ActionLink(ViewData["NumeroSorteado"]?.ToString(), "DownloadTXT", "Clientes", new { NumeroSorteado = NumeroSorteado })</p>
+            </div>
+
+        }
+        else
+        {
+            <div />
+        }
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#Telefone").mask("(00) 0000-0000");
+
+        @*$("#Sorteado").hide();*@
+
+    })
+
+    $("#btn-div").click(function () {
+        $("#Sorteado").show();
+    })
+
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
