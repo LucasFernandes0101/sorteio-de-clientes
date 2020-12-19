@@ -1,5 +1,3 @@
-using System;
-
 namespace WebAppSorteio.Models
 {
     public class ErrorViewModel

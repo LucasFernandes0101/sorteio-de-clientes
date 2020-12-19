@@ -15,7 +15,7 @@
 
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" id="Nome" class="form-control" />
+                <input asp-for="Nome" id="Nome" class="form-control" maxlength="40"/>
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -33,12 +33,10 @@
             </div>
         </form>
 
-
         @{
             var NumeroSorteado = ViewData["NumeroSorteado"];
         }
 
-        @**@
         @if (NumeroSorteado != null)
         {
 
@@ -51,21 +49,17 @@
         {
             <div />
         }
-
     </div>
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#Telefone").mask("(00) 00000-0000");
 
-        @*$("#Sorteado").hide();*@
-
     })
 
     $("#btn-div").click(function () {
         $("#Sorteado").show();
     })
-
 </script>
 
 @section Scripts {

@@ -37,7 +37,6 @@ namespace WebAppSorteio.Controllers
         [HttpPost]
         public IActionResult PostarCliente(Cliente cliente)
         {
-
             //Caso o modelo for válido, adiciona o cliente ao banco
             if (ModelState.IsValid)
             {
