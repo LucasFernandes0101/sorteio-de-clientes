@@ -13,7 +13,7 @@
 
 A website to register customers, assigning a random number to each one for a draw.
 
-### Installation
+## Installation
 
 1. Clone the repository
 ```sh
