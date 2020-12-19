@@ -1,4 +1,10 @@
 # Sorteio de Clientes
+
+## Table of Contents
+
+* [About the Project](#about-the-project)
+* [Installation](#Installation)
+* [Usage](#usage)
  
  
 ## About The Project
