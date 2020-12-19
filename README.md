@@ -1,4 +1,5 @@
-# sorteio-de-clientes
+# Sorteio de Clientes
+ 
  
 ## About The Project
 
@@ -8,7 +9,7 @@ A website to register customers, assigning a random number to each one for a dra
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository
 ```sh
 git clone https://github.com/LucasFernandes0101/sorteio-de-clientes.git
 ```
