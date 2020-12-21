@@ -84,7 +84,7 @@ namespace WebAppSorteio.Controllers
         public IActionResult DownloadTXT(string NumeroSorteado)
         {
             Cliente cliente = EncontrarCliente(Int32.Parse(NumeroSorteado));
-            using (TextWriter File = new StreamWriter(@"C:\Users\ferna\Desktop\NumeroSorteado.txt"))
+            using (TextWriter File = new StreamWriter("NumeroSorteado.txt"))
             {
                 File.WriteLine("Obrigado, " + cliente.Nome + "! Por ter solicitado o número " + cliente.NumeroSorteado + ".");
             }
