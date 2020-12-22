@@ -1,19 +1,19 @@
 # Sorteio de Clientes
 
-## Table of Contents
+## Table of Contents 📌
 
 * [About the Project](#about-the-project)
 * [Installation](#Installation)
 * [Usage](#usage)
  
  
-## About The Project
+## About The Project 📝
 
 ![inicio](https://github.com/LucasFernandes0101/sorteio-de-clientes/blob/master/images/inicio.png)
 
 A website to register customers, assigning a random number to each one for a draw.
 
-## Installation
+## Installation 🛠️
 
 1. Clone the repository
 ```sh
@@ -24,11 +24,11 @@ git clone https://github.com/LucasFernandes0101/sorteio-de-clientes.git
 dotnet run
 ```
 
-## Alert
+## Alert 🚨
 
 The database is instantiated on the local machine, you have to change the "Data Source" in the ConnectionString for your machine at "appsettings.json".
 
-## Usage
+## Usage 💻
 
 1. Fill in the fields with the customer's data and click "Gerar Números"
 
