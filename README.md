@@ -26,7 +26,7 @@ dotnet run
 
 ## Alert
 
-The database is instantiated on the local machine
+The database is instantiated on the local machine, you have to change the ConnectionString in "appsettings.json".
 
 ## Usage
 
