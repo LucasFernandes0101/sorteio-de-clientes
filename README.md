@@ -24,10 +24,6 @@ git clone https://github.com/LucasFernandes0101/sorteio-de-clientes.git
 dotnet run
 ```
 
-## Alert 🚨
-
-The database is instantiated on the local machine, you have to change the "Data Source" in the ConnectionString for your machine at "appsettings.json".
-
 ## Usage 💻
 
 1. Fill in the fields with the customer's data and click "Gerar Números"
